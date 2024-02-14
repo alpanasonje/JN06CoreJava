@@ -23,6 +23,13 @@ public class StudentDemo {
 		System.out.println("Name "+studObjTwo.getName());
 		System.out.println("Branch "+studObjTwo.getBranch());
 		
+		Student stud;
+		stud=studObjOne.getStudent();
+		System.out.println("-----------------------------------");
+		System.out.println("Roll Number "+stud.getRollNo());
+		System.out.println("Name "+stud.getName());
+		System.out.println("Branch "+stud.getBranch());
+	
 	}
 
 }
