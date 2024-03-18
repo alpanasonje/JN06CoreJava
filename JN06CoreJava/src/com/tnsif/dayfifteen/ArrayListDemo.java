@@ -2,6 +2,7 @@ package com.tnsif.dayfifteen;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 
 import com.tnsif.daysix.hierarchical.Person;
 
@@ -69,6 +70,22 @@ public class ArrayListDemo {
 		
 		System.out.println(personList);
 		//Collections.sort(personList); CTE
+		
+		System.out.println("------------Cities are as follows-----------");
+		//Iterate a collection
+		Iterator<String> it=cityList.iterator();
+		while(it.hasNext())
+		{
+			String city;
+			city=it.next();
+			//System.out.println(city+"\tLength : "+city.length());
+			System.out.println(city.toUpperCase());			
+			if (city.equals("Pune"))
+				it.remove();
+		}
+		
+		//System.out.println(it.next()); NoSuchElementException
+		System.out.println(cityList);
 	}
 
 }
