@@ -3,9 +3,11 @@ package com.tnsif.dayseventeen;
 
 import java.util.Arrays;
 
+//Define generic class
 public class MyArray<T> {
 	T arr[];
 	
+	//Generic Constructor
 	public MyArray(T arr[])
 	{
 		this.arr=arr;
