@@ -1,6 +1,8 @@
 package com.tnsif.dayeighteen;
 
+import java.lang.invoke.ClassSpecializer.Factory;
 import java.util.function.Consumer;
+import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 
@@ -45,6 +47,7 @@ public class LambdaExpressionDemo {
 		evenPredicate=(n)->n%2==0;
 		System.out.println("Is 5 Even : ?"+evenPredicate.test(5));
 		System.out.println("Is 50 Even : ?"+evenPredicate.test(50));
+		
 	}
 
 }
